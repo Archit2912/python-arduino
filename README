@@ -1,0 +1,5 @@
+# Python + Arduino Learning Journey
+
+In this repository, I will be going through a journey of learning how to sync Python and Arduino using PySerial. I will also explore how to run and operate various sensors with Arduino, and connect them to Python for data collection and control.
+
+This project is focused on building the foundation for reliable communication between Python scripts and Arduino devices, and learning how to integrate sensors into that workflow.
