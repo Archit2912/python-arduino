@@ -1,0 +1,61 @@
+# Python → Arduino Communication
+
+## Overview
+
+A simple project demonstrating two-way serial communication between Python and Arduino using PySerial. Python sends commands, Arduino executes them, and sends a response back.
+
+## Problems Faced
+
+* Python received `"Arduino is ready."` instead of the command response.
+* The serial connection reset the Arduino whenever Python opened the COM port.
+
+## Solution
+
+* Added a 2-second delay (`time.sleep(2)`) after opening the serial port.
+* Read and cleared the startup `"Arduino is ready."` message before sending commands.
+
+## What I Learned
+
+* Two-way serial communication
+* Sending commands from Python to Arduino
+* Reading and validating commands on Arduino
+* Understanding the serial buffer and startup synchronization
+
+## Features
+
+* Python → Arduino communication
+* Arduino → Python response
+* LED ON/OFF control
+* Unknown command handling
+
+## Commands
+
+| Command | Action                   |
+| ------- | ------------------------ |
+| `ON`    | Turn LED ON              |
+| `OFF`   | Turn LED OFF             |
+| `EXIT`  | Close the Python program |
+
+## Project Structure
+
+```text
+Python-Arduino/
+│
+├── src/
+│   └── main.cpp
+├── data_pass.py
+└── README.md
+```
+
+## How to Run
+
+1. Upload the Arduino code using PlatformIO.
+2. Connect the Arduino to your PC.
+3. Update the COM port in `data_pass.py`.
+4. Run:
+
+```bash
+python data_pass.py
+```
+
+
