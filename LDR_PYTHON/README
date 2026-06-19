@@ -1,0 +1,23 @@
+# Photoresistor Light Project
+
+## What it does
+- Arduino reads light sensor values (0–1023).
+- Python receives those values via serial.
+- Values are scaled into a custom light range (0–5).
+- Prints live readings and plots a line graph.
+
+## Why
+
+The LDR returns values between 0 and 1023.
+
+Instead of plotting raw ADC values, I scaled them to a range of 0–5 to make the graph easier to interpret.
+
+0 = Dark
+
+5 = Bright Light
+
+## Run
+1. Upload Arduino sketch.
+2. Run `photo.py`.
+3. Watch live values in terminal.
+4. See graph after enough samples.
