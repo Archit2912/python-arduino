@@ -1,0 +1,26 @@
+# Python-Arduino Servo Control
+
+## Overview
+This project controls an SG90 servo motor using Python and Arduino through serial communication. It has two modes:
+- Enter servo angles (0–180)
+- Control the servo using the left and right arrow keys
+
+## What I Learned
+- Python ↔ Arduino serial communication
+- Servo control using the Servo library
+- Keyboard input in Python
+- Input validation
+- Using `min()` and `max()` to keep values between 0 and 180
+
+## AI Assistance
+- GitHub Copilot: Suggested code improvements, including using `min()` and `max()` to keep the servo angle between 0° and 180°.
+- ChatGPT: Helped me understand concepts, review my code, and troubleshoot the Servo library setup in PlatformIO.
+
+## My Contribution
+- Built and tested both servo control programs.
+- Added input validation and improved the program flow.
+- Understood the code before pushing it to GitHub.
+
+## Problems Faced
+- Had issues setting up the Servo library in PlatformIO.
+- Fixed it by installing the correct library and rebuilding the project.
