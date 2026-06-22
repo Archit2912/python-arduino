@@ -1,0 +1,32 @@
+# IR Remote → Python
+
+## Overview
+
+Reads IR remote button presses with Arduino and sends the HEX codes to Python. Arduino also identifies which button was pressed.
+
+## What I Learned
+
+* Using the IRremote library.
+* Reading IR signals and sending data over Serial.
+* Mapping HEX codes to button names.
+
+## Problems Faced
+
+* Old IRremote code didn't work.
+* Unsure about repeat (`0`) codes.
+
+## Solution
+
+* Updated to the latest IRremote API.
+* Learned that `0` is the repeat signal when a button is held.
+
+## My Work
+
+* Built the Python Serial reader.
+* Connected and tested the IR receiver.
+* Mapped buttons using constants and added button recognition.
+
+## AI Assistance
+
+* ChatGPT: Updated old IRremote code, explained repeat codes, and reviewed the project.
+* GitHub Copilot: Suggested small code improvements while coding.
